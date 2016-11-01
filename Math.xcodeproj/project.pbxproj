@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B71C4691DC8F4F500F1446A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71C4681DC8F4F500F1446A /* main.m */; };
+		2B71C4711DC901DD00F1446A /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71C4701DC901DD00F1446A /* AdditionQuestion.m */; };
+		2B71C4741DC9118B00F1446A /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B71C4731DC9118B00F1446A /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		2B71C4651DC8F4F500F1446A /* Math */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Math; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B71C4681DC8F4F500F1446A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B71C46F1DC901DD00F1446A /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		2B71C4701DC901DD00F1446A /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		2B71C4721DC9118B00F1446A /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		2B71C4731DC9118B00F1446A /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				2B71C4681DC8F4F500F1446A /* main.m */,
+				2B71C46F1DC901DD00F1446A /* AdditionQuestion.h */,
+				2B71C4701DC901DD00F1446A /* AdditionQuestion.m */,
+				2B71C4721DC9118B00F1446A /* InputHandler.h */,
+				2B71C4731DC9118B00F1446A /* InputHandler.m */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -120,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B71C4691DC8F4F500F1446A /* main.m in Sources */,
+				2B71C4741DC9118B00F1446A /* InputHandler.m in Sources */,
+				2B71C4711DC901DD00F1446A /* AdditionQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
