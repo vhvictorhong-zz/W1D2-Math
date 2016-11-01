@@ -15,9 +15,7 @@ int main(int argc, const char * argv[]) {
         
         BOOL gameOn = true;
         
-        InputHandler *input = [[InputHandler alloc] init];
-        
-        NSString *inputString = [input getInput];
+        NSString *inputString = [InputHandler getInput];
         
         NSLog(@"%@", inputString);
         
@@ -27,7 +25,7 @@ int main(int argc, const char * argv[]) {
             
             NSLog(@"%@", [question question]);
             
-            NSString *answerInput = [input getInput];
+            NSString *answerInput = [InputHandler getInput];
             
             NSString *convertAnswerToString = [NSString stringWithFormat:@"%ld", [question answer]];
             

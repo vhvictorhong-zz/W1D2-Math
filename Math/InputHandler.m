@@ -10,7 +10,7 @@
 
 @implementation InputHandler
 
--(NSString *)getInput {
++(NSString *)getInput {
     
     char inputChars[255];
     printf("Input a string: ");
