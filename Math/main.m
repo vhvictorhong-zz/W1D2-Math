@@ -27,26 +27,15 @@ int main(int argc, const char * argv[]) {
             
             NSLog(@"%@", [question question]);
             
-            char answerInputChars[255];
-            printf("Input answer please:");
-            fgets(answerInputChars, 255, stdin);
-            
-            NSString *answerInputString = [NSString stringWithCString:answerInputChars encoding:NSUTF8StringEncoding];
-            
-            NSString *answerNewString = [answerInputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            
-            NSArray *answerComponents = [answerNewString componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            answerComponents = [answerComponents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"self <> ''"]];
-            
-            answerNewString = [answerComponents componentsJoinedByString:@""];
+            NSString *answerInput = [input getInput];
             
             NSString *convertAnswerToString = [NSString stringWithFormat:@"%ld", [question answer]];
             
-            if ([answerNewString isEqualToString:@"quit"]) {
+            if ([answerInput isEqualToString:@"quit"]) {
                 gameOn = false;
                 break;
             }
-            if ([answerNewString isEqualToString:convertAnswerToString]) {
+            if ([answerInput isEqualToString:convertAnswerToString]) {
                 NSLog(@"Right!");
             } else {
                 NSLog(@"Wrong!");
